@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beginner’s Guitar Course</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen font-sans">
+
+  <!-- Top Header -->
+  <header class="bg-blue-600 text-white py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">🎸 Beginner’s Guitar Course </h1>
+      <button id="logoutBtn" class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded text-sm font-semibold transition">
+        Logout
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    
+   <!-- Notification Banner -->
+<div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded mb-6 shadow-md">
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
+    <div>
+      <p class="font-semibold">🎥 Next Live Session:</p>
+      <p class="text-sm">
+        <span class="font-medium">Date – Awaited</span> |
+        <span class="font-medium">Time – Awaited</span> 
+      </p>
+    </div>
+
+    <a href="https://www.youtube.com/c/GuitarCoverwithRohit" target="_blank"
+       class="inline-block mt-2 sm:mt-0 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 text-sm font-semibold transition">
+      🔴 Join Live on YouTube
+    </a>
+    
+  </div>
+</div>
+
+<!-- Scrolling Marquee Message -->
+<div class="bg-green-100 border-t border-green-300 py-2 overflow-hidden">
+  <div class="whitespace-nowrap animate-marquee text-black-800 font-medium text-sm sm:text-base">
+    📂 Downloadable Resources are available at the bottom — scroll down to check them out 📥
+  </div>
+</div>
+
+<!-- Custom CSS for marquee -->
+<style>
+  @keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  .animate-marquee {
+    display: inline-block;
+    min-width: 100%;
+    animation: marquee 25s linear infinite;
+  }
+</style>
+
+
+
+
+    <h2 class="text-xl font-semibold mb-6 text-center text-gray-800">Your Video Lessons</h2>
+    
+    <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Video Embeds -->
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/NAX3yCnqHT0?si=1dZDizwOacqUhzuo" title="Lesson 1" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/1rxjFEXL4LA?si=3UVU7HIKg-XPvIvu" title="Lesson 2" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/mS0LtwT5LvY?si=OsCi3-hTUPuJOkYt" title="Lesson 3" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/ZeLkAaVG1sw?si=vXYesS9bN_tmHkkP" title="Lesson 4" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/ZXPJehAJn6M?si=dd9RgJyOqCXSifsi" title="Lesson 5" frameborder="0" allowfullscreen></iframe>   
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/1EAtm4su4zw?si=Bv06uyF95A5eRXmy" title="Lesson 6" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/EhGJQhpp54g?si=flD0Km1TjUiYPc42" title="Lesson 7" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/vKja5DCLipk?si=7A8N2iw2qiqorFsU" title="Lesson 8" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/K5tTwOyJfMg?si=LlF3H2yZ2ZYx5863" title="Lesson 9" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/m_JRvfQB3m0?si=FJj2ceTJZtJKptWL" title="Lesson 10" frameborder="0" allowfullscreen></iframe> 
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/_vnhV6itz28?si=_b5ZfikZkq8o4FB4" title="Lesson 11" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/MevxSKgYoKw?si=mEqCsoQpW2sr-vN2" title="Lesson 12" frameborder="0" allowfullscreen></iframe>
+
+      
+<!-- Lesson 13 (thumbnail instead of iframe) -->
+<div class="relative w-full aspect-video rounded shadow overflow-hidden">
+  <!-- Lesson Label -->
+  <div class="absolute top-2 left-2 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
+    Lesson 13
+  </div>
+  <a href="https://youtu.be/Wdo487hdxks" target="_blank" rel="noopener">
+    <img src="https://img.youtube.com/vi/Wdo487hdxks/hqdefault.jpg" 
+         alt="Lesson 13 Thumbnail" class="w-full h-full object-cover">
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="bg-black bg-opacity-50 rounded-full p-4">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- Lesson 14 (thumbnail instead of iframe) -->
+<div class="relative w-full aspect-video rounded shadow overflow-hidden">
+  <div class="absolute top-2 left-2 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
+    Lesson 14
+  </div>
+  <a href="https://www.youtube.com/watch?v=d-nwViu5ccE" target="_blank" rel="noopener">
+    <img src="https://img.youtube.com/vi/d-nwViu5ccE/hqdefault.jpg" 
+         alt="Lesson 14 Thumbnail" class="w-full h-full object-cover">
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="bg-black bg-opacity-50 rounded-full p-4">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- Lesson 15 (thumbnail instead of iframe) -->
+<div class="relative w-full aspect-video rounded shadow overflow-hidden">
+  <div class="absolute top-2 left-2 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
+    Lesson 15
+  </div>
+  <a href="https://www.youtube.com/watch?v=pr6hkJLqtIo" target="_blank" rel="noopener">
+    <img src="https://img.youtube.com/vi/pr6hkJLqtIo/hqdefault.jpg" 
+         alt="Lesson 15 Thumbnail" class="w-full h-full object-cover">
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="bg-black bg-opacity-50 rounded-full p-4">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/tONogOTjws0?si=LY6P8LE-n-9WcEZB" title="Lesson 16" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/E6Wcu0uiHJg?si=xgPvTPea1zInbLYV" title="Lesson 17" frameborder="0" allowfullscreen></iframe> 
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/cRXpvPgOrpk?si=R7JaKzrD4odQKVUA" title="Lesson 18" frameborder="0" allowfullscreen></iframe> 
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/ScD_yWB2BT0?si=SyAL91rq0xGUJTsE" title="Lesson 19" frameborder="0" allowfullscreen></iframe> 
+      <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/NAmqTaddSYk" title="Lesson 20" frameborder="0" allowfullscreen></iframe> 
+ 
+
+
+
+    </div>
+  </main>
+
+
+<!-- Resources Section -->
+<section class="container mx-auto px-4 py-8">
+  <h2 class="text-xl font-semibold mb-6 text-gray-800 text-center">📂 Downloadable Resources</h2>
+  
+  <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    
+    <!-- File Card -->
+    <a href="files\Lesson 4 Hand & Finger Exercise.pdf" download 
+       class="bg-white shadow rounded-lg p-4 flex flex-col items-center text-center hover:shadow-lg transition">
+      <div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full mb-3">
+        📄
+      </div>
+      <p class="text-sm font-medium text-gray-700">Lesson 4 Hand & Finger – Exercise PDF</p>
+    </a>
+
+    <!-- File Card -->
+    <a href="files\Lesson 7_ Downstroke & Upstroke.pdf" download 
+       class="bg-white shadow rounded-lg p-4 flex flex-col items-center text-center hover:shadow-lg transition">
+      <div class="w-12 h-12 flex items-center justify-center bg-green-100 text-green-600 rounded-full mb-3">
+        🎶
+      </div>
+      <p class="text-sm font-medium text-gray-700">Lesson 7 –  Downstroke & Upstroke_PDF</p>
+    </a>
+
+    <!-- File Card -->
+    <a href="files\Lesson 8.pdf" download 
+       class="bg-white shadow rounded-lg p-4 flex flex-col items-center text-center hover:shadow-lg transition">
+      <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 text-yellow-600 rounded-full mb-3">
+        📝
+      </div>
+      <p class="text-sm font-medium text-gray-700">Lesson 8 – Notes PDF</p>
+    </a>
+
+        <!-- File Card -->
+    <a href="files\Strings Frets Notes.jpg" download 
+       class="bg-white shadow rounded-lg p-4 flex flex-col items-center text-center hover:shadow-lg transition">
+      <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 text-yellow-600 rounded-full mb-3">
+        📝
+      </div>
+      <p class="text-sm font-medium text-gray-700">Strings Frets Notes –  PDF</p>
+    </a>
+
+
+        <!-- File Card -->
+    <a href="files\Pal Pal Dil Ke Pass Notes.pdf" download 
+       class="bg-white shadow rounded-lg p-4 flex flex-col items-center text-center hover:shadow-lg transition">
+      <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 text-yellow-600 rounded-full mb-3">
+        📝
+      </div>
+      <p class="text-sm font-medium text-gray-700">Pal Pal Dil Ke Pass – Notes PDF</p>
+    </a>
+
+
+        <!-- File Card -->
+    <a href="files\A MAJOR & C MINOR SCALE.pdf" download 
+       class="bg-white shadow rounded-lg p-4 flex flex-col items-center text-center hover:shadow-lg transition">
+      <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 text-yellow-600 rounded-full mb-3">
+        📝
+      </div>
+      <p class="text-sm font-medium text-gray-700">A MAJOR & C MINOR SCALE –  PDF</p>
+    </a>
+
+
+
+        <!-- File Card -->
+    <a href="files\Tere Bina Zindagi Se_Notes.pdf" download 
+       class="bg-white shadow rounded-lg p-4 flex flex-col items-center text-center hover:shadow-lg transition">
+      <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 text-yellow-600 rounded-full mb-3">
+        📝
+      </div>
+      <p class="text-sm font-medium text-gray-700">Tere Bina Zindagi Se  – Notes PDF</p>
+    </a>
+
+
+    <!-- File Card
+    <a href="files/full-course-guide.zip" download 
+       class="bg-white shadow rounded-lg p-4 flex flex-col items-center text-center hover:shadow-lg transition">
+      <div class="w-12 h-12 flex items-center justify-center bg-red-100 text-red-600 rounded-full mb-3">
+        📦
+      </div>
+      <p class="text-sm font-medium text-gray-700">Full Course Guide (ZIP)</p>
+    </a>
+
+  </div> -->
+
+  <p class="text-sm text-gray-500 mt-4 text-center">
+    💡 Click the <code>files</code> to open and refer them along with Video Lessons.
+  </p>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4 text-center text-sm">
+    © 2025 GuitarCoverWithRohit · Designed by Anurag Mathews (FlexMatty)
+  </footer>
+
+  <!-- Auth Script -->
+  <script>
+    if (sessionStorage.getItem('loggedIn') !== 'true') {
+      window.location.href = 'index.html';
+    }
+
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      sessionStorage.removeItem('loggedIn');
+      window.location.href = 'https://rohitonstrings.github.io/MemberPortal3/';
+    });
+  </script>
+</body>
+</html>
